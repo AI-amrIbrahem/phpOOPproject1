@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>HR Page</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,900">
+    </head>
+
+
+    <body>
+
+        <div class="path">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <div class="container">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">HR</li>
+                    </div>
+                </ol>   
+            </nav>
+        </div>
+
+
+        <div class="hr-page">
+            <div class="container">
+                <div class="hr-heading text-uppercase">
+                    <h3 class="text-center">Human Resources</h3>
+                </div>
+                <div class="add-emps">
+                    <h5 class="text-center">Added Employees</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                                <span>Employee Name: Youshi Djang</span>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal7" >Visa Details</button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal7-1" >Update Visa Request</button>
+                                <div class="modal fade" id="exampleModal7" tabindex="-6" role="dialog" aria-labelledby="exampleModal7" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModal7">Add visa details for this employee</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form method="POST">
+                                                <div class="form-group">
+                                                    <label for="hr-name" class="col-form-label">Country</label>
+                                                    <input type="text" class="form-control" id="employee-country" required>
+                                                    <label for="hr-name" class="col-form-label">Date</label>
+                                                    <input type="date" class="form-control" id="employee-date" required>
+                                                    <label for="hr-name" class="col-form-label">Interviews Dates</label>
+                                                    <input type="date" class="form-control" id="interviews-date" required>
+                                                    <label for="message-text" class="col-form-label">consultant details:</label>
+                                                    <textarea class="form-control" id="message-text"></textarea>
+                                                </div>
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                                <button type="submit" class="btn btn-primary">Request</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="modal fade" id="exampleModal7-1" tabindex="-7" role="dialog" aria-labelledby="exampleModal7-1" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModal7-1">Update Visa Request</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form method="POST">
+                                                <div class="form-group">
+                                                    <label for="message-text" class="col-form-label">Write Updated Interview details with its result :</label>
+                                                    <textarea class="form-control" id="updated-detailes" required></textarea>
+                                                </div>
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                                <button type="submit" class="btn btn-primary">Update</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                                <span>Employee Name: Youshi Djang</span>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal5" >Visa Details</button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal5-1" >Update Visa Request</button>
+                                <div class="modal fade" id="exampleModal5" tabindex="-6" role="dialog" aria-labelledby="exampleModal5" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModal5">Add visa details for this employee</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form method="POST">
+                                                <div class="form-group">
+                                                    <label for="hr-name" class="col-form-label">Country</label>
+                                                    <input type="text" class="form-control" id="employee-country" required>
+                                                    <label for="hr-name" class="col-form-label">Date</label>
+                                                    <input type="date" class="form-control" id="employee-date" required>
+                                                    <label for="hr-name" class="col-form-label">Interviews Dates</label>
+                                                    <input type="date" class="form-control" id="interviews-date" required>
+                                                    <label for="message-text" class="col-form-label">consultant details:</label>
+                                                    <textarea class="form-control" id="message-text"></textarea>
+                                                </div>
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                                <button type="submit" class="btn btn-primary">Request</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="modal fade" id="exampleModal5-1" tabindex="-7" role="dialog" aria-labelledby="exampleModal5-1" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModal5-1">Update Visa Request</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form method="POST">
+                                                <div class="form-group">
+                                                    <label for="message-text" class="col-form-label">Write Updated Interview details with its result :</label>
+                                                    <textarea class="form-control" id="updated-detailes" required></textarea>
+                                                </div>
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                                <button type="submit" class="btn btn-primary">Update</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                                <span>Employee Name: Will Andrian</span>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal6" >Visa Details</button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal6-1" >Update Visa Request</button>
+                                <div class="modal fade" id="exampleModal6" tabindex="-7" role="dialog" aria-labelledby="exampleModal6" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModal6">Add visa details for this employee</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form method="POST">
+                                                <div class="form-group">
+                                                    <label for="hr-name" class="col-form-label">Country</label>
+                                                    <input type="text" class="form-control" id="employee-country" required>
+                                                    <label for="hr-name" class="col-form-label">Date</label>
+                                                    <input type="date" class="form-control" id="employee-date" required>
+                                                    <label for="hr-name" class="col-form-label">Interviews Dates</label>
+                                                    <input type="date" class="form-control" id="interviews-date" required>
+                                                    <label for="message-text" class="col-form-label">consultant details:</label>
+                                                    <textarea class="form-control" id=">consultant-details" required></textarea>
+                                                </div>
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                                <button type="submit" class="btn btn-primary">Request</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="modal fade" id="exampleModal6-1" tabindex="-7" role="dialog" aria-labelledby="exampleModal6-1" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModal6-1">Update Visa Request</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form method="POST">
+                                                <div class="form-group">
+                                                    <label for="message-text" class="col-form-label">Write Updated Interview details with its result :</label>
+                                                    <textarea class="form-control" id="updated-detailes" required></textarea>
+                                                </div>
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                                <button type="submit" class="btn btn-primary">Update</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="reports text-center">
+                    <h3 class="text-uppercase">Reports</h3>
+                    <div class="card">
+                        <div class="card-header">
+                            Report
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Report title</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="change-password">
+                    <h3 class="text-uppercase text-center">Change Password?</h3>
+                    <form method="POST">
+                        <div class="form-group">
+                            <label for="currentPass">Write current password</label>
+                            <input type="password" class="form-control" id="currentPass" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="newPass">Write new password</label>
+                            <input type="password" class="form-control" id="newPass" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="send-feedback">
+                    <h3 class="text-uppercase text-center">Send feedback</h3>
+                    <form method="POST">
+                         <div class="form-group">
+                            <label for="feedback-title" class="col-form-label">Feedback title:</label>
+                            <input class="form-control" id="feedback-title" required></input>
+                            <label for="feedback" class="col-form-label">Write your feedback detailes directly to admin:</label>
+                            <textarea class="form-control" id="feedback" required></textarea>
+                         </div>
+                         <button type="submit" class="btn btn-primary">Send Feedback</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="js/jquery-3.2.1.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.mixitup.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
